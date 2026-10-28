@@ -1,0 +1,48 @@
+{
+  "name": "@mambalabsdev/mcp-lead-file-import-checker",
+  "version": "1.0.0",
+  "description": "MCP server for Lead File Import Checker. Check a lead list before a CRM or sequencer import: duplicates, email syntax, free, role, and disposable addresses, MX, parked sites, company match. One verdict per row. Runs on Apify.",
+  "type": "module",
+  "bin": {
+    "mcp-lead-file-import-checker": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "lead-list",
+    "data-cleaning",
+    "dedupe",
+    "crm-import",
+    "apify"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/lead-file-import-checker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-lead-file-import-checker"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-lead-file-import-checker"
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-lead-file-import-checker": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-lead-file-import-checker"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
