@@ -94,7 +94,7 @@ Pay per event on Apify, billed to your Apify account. Prices in USD.
 | Event | Free plan | Bronze | Silver | Gold |
 |---|---|---|---|---|
 | `row-checked`, per row of your file checked | $0.002 | $0.0019 | $0.0018 | $0.0017 |
-| `apify-actor-start`, per run start | $0.0005 | $0.0005 | $0.0005 | $0.0005 |
+| `apify-actor-start`, per run start | $0.001 | $0.001 | $0.001 | $0.001 |
 
 Blank rows, rows over `max_rows`, and the one row a refused input writes are free.
 
